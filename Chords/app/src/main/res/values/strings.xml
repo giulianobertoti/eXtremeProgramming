@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Chords</string>
+
+    <string-array name="listBands">
+        <item>Beatles</item>
+        <item>Oasis</item>
+    </string-array>
+
+    <string-array name="listMusics">
+        <item>Champagne Supernova</item>
+        <item>Hey Bulldog</item>
+    </string-array>
+
+    <string name="textButtonSearch">Search</string>
+
+    <string name="results"></string>
+
+    <string name="action_settings">Settings</string>
+</resources>
