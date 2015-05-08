@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JSON Request Sample from a RESTful Web Service</title>
+    
+	<!-- a biblioteca abaixo me ajuda a requisitar o JSON ao servidor RESTful -->
+	<script src="jquery.js"></script> 
+
+	<script>
+
+		$(document).ready(function(){
+						
+						$.getJSON("http://127.0.0.1:4567/tablature/oasis/wonderwall?format=json&jsoncallback=", function(data) {//Requisicao para obter o JSON da sua rota RESTful
+								
+								
+								$(".tab").append(data.chords);
+								
+    
+						});
+						
+		});
+			
+	</script>
+
+  </head>
+  <body>
+	<p class="tab"></p>
+  </body>
+</html>
